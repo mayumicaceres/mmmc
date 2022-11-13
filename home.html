@@ -10,28 +10,34 @@
     <link rel="shortcut icon" type="image/png" href="https://mmmc.com.br" sizes="32x32">
     <style>
     
+    .html,
     .body {
       margin: 0;
+      padding: 0;
+    }
+    .body {
       height: 3000xp;
       font-family: Montserrat;
       color: rgb(48, 48, 48);
     }
     .a {
       cursor: pointer;
-      color: rgb(48,48,48);
       text-decoration: none;
     }
     a:link {
       text-decoration: none;
-      color: rgb(48,48,48);
+      color: rgb(48, 48, 48);
       font-family: Montserrat;
-      font-size: 18pt;
+      font-size: 15pt;
       text-transform: none;
     }
 
     a.hover {
       text-decoration: underline;
     }
+
+    /* nav header */
+
     .nav-header {
     transform: none;
     position: fixed;
@@ -85,10 +91,10 @@
     justify-content: space-between;
     }
   .page-title {
-    margin: 20px 30px 0px;
+    margin: 35px 30px 0px;
     font-family: Montserrat;
     color: rgb(48,48,48);
-  }
+     }
 
   .imagepremium {
     width: 300px;
@@ -101,11 +107,34 @@
     align-items: center;
   }
 
-  .imagem-header {
+  /* text image title */
+
+  .image-title-high {
+    position: relative;
     width: 100%;
     height: 500xp;
-    margin-top: 0;
+    margin-top: -10px;
+    margin-bottom: -5px;
   }
+  .title-high-text {
+    position: absolute;
+    top: 280px;
+    left: 120px;
+  }
+  .title-high-big {
+    color:rgb(48,48,48);
+    font-size: 31pt;
+    font-family: Montserrat;
+  }
+  .title-high-small {
+    color:rgb(48,48,48);
+    font-size: 22pt;
+    font-family: Montserrat;
+    width: 800px;
+  }
+
+  /* bar middle */
+
   .bar-middle {
     display: flex;
     justify-content: space-around;
@@ -113,13 +142,16 @@
     height: 120px;
     flex-direction: row;
     background-color: rgb(210, 210, 215);
+    margin: 0;
+    padding: 0;
 
   }
   .bar-middle div {
     font-family: Zurich Lt BT;
     color: rgb(48, 48, 48);
-
   }
+  
+  /* column content */
 
  .section-imagem-text-into-1 {
   display: grid;
@@ -161,6 +193,8 @@
     font-family: Montserrat;
 
   }
+
+  /* text end */
   .text-end {
     text-align: center;
     display: grid;
@@ -183,11 +217,13 @@
     padding: 20px;
   }
 
+/* footer */
 
  .footer-table {
     height: 100%;
     background-color: rgb(210, 210, 215);
     width: 100%;
+    margin-bottom: -15px;
   }
   .division {
     color: rgb(210, 210, 215)
@@ -254,13 +290,16 @@
     margin-top: 73px;
     font-size: 11pt;
   }
+  
     </style>
 </head>
 <body>
+
+<!-- nav header -->
   <header class="nav-header" data-cover-transparent="enabled" data-bg-overlay-visibility="visible" data-mobile-fallback="enabled" style="transform: none;">
   <div class="column-nav-bar">
    <div class="logo-navbar-left">
-        <a href="https://mmmc.com.br" 
+        <a href="https://mmmc.com.br/home" 
         title="MMMC Arquitetos - Arquitetura Contemporânea Sustentável - São Paulo - SP"><img class="logo" src="mmmc-b-500-curto.png" alt="logo">
         </a>
    </div>
@@ -280,29 +319,31 @@
   </div>
   </header>
 
-   
-  
-     
-     <img class="imagem-header" src="quarto-camera4-ptb.jpg">
-  
+<!-- image high -->   
+ 
+     <img class="image-title-high" src="painel-white-image.jpg">
+     <div class="title-high-text"><div class="title-high-big">Escritório de</div>
+     <div class="title-high-small">|Arquitetura Contemporânea Residencial |Arquitetura Sustentável</div>
+    </div>
+<!-- bar middle -->
   <section>
-  <div class="bar-middle">
+    <div class="bar-middle">
         <div>Sustentabilidade</div>
         <div>Qualidade</div>
         <div>Alto desempenho</div>
         <div>Tecnologia</div>
-  </div>
- </section>
-
-<!-- content <div class="column-content-three">-->
+    </div>
+  </section>
+ 
+<!-- content -->
   <div class="column-content">
     <div><img class="imagem-modelo-energia" src="casariba-camera1-640.jpg" alt="harmonia na casa"></div>
     <div class="content-text"><h1>Energia</h1>
-    <p>A harmonia das energias das casas são varios componentes importantes para dispor da melhor maneira os movéis e os ambientes.</p>
-    <p> A composição e locação dos ambientes segue os pricipios do feng shui e a sinergia da casa. Trazendo bem estar e harmonia resultando em conforto e bom sono.</p>
+    <p>A harmonia das energias das casas através de vários componentes importantes para dispor da melhor maneira os movéis e os ambientes.</p>
+    <p> A composição e locação dos ambientes segue os princípios do feng shui e a sinergia da casa. Trazendo bem estar e harmonia resultando em conforto e bom sono.</p>
     </div>
     <div class="content-text"><h1>Sustentabilidade</h1>
-    <p>A sustentabildiade na casa fornece melhor aproveitamento dos recursos.  Ajuda o planeta. Benefícios a longo prazo como reduz a utilização das conssionarias.</p>
+    <p>A sustentabildiade na casa fornece melhor aproveitamento dos recursos.  Ajuda o planeta. Benefícios a longo prazo pois reduz a utilização das conssionarias.</p>
     </div>
     <div><img class="imagem-modelo-energia" src="casariba-camera3-640.jpg" alt="harmonia na casa"></div>
  </div>
@@ -310,7 +351,7 @@
  <!-- text end-->
  
   <section class="text-end">
-    <div class="quadrante-text-end">Agora é com você, fazer sua familia feliz e planejar sua casa dos sonhos com conforto, comodidade, elegância, segurança e  saudável</div>
+    <div class="quadrante-text-end">Agora é com você, fazer sua família feliz e planejar sua casa dos sonhos com conforto, comodidade, elegância, segurança e  saudável</div>
   </section>
 
  <!-- footer-->
@@ -318,7 +359,7 @@
   <div class="footer-table">
     <div class="division">_________________</div>
     <div class="footer-logo-and-text">
-         <div class="footer-logo"><a href="https://mmmc.com.br" 
+         <div class="footer-logo"><a href="https://mmmc.com.br/home" 
           title="MMMC Arquitetos - Arquitetura Contemporânea Sustentável - São Paulo - SP"><img class="logo2" src="MMMCaceres-white.png" alt="logo"></a>
          </div>
          <div class="footer-name-text">
@@ -328,8 +369,12 @@
         <div class="footer-phone-text">
         <div><strong>Fone</strong></div>
          +55 11 9522-08988
-        <img class="icon-whatsapp" src="icon-whatsapp.png" alt="whatsapp">
-        <img class="icon-telegram" src="icon-telegram.png" alt="telegram">
+        <a href="https://mmmc.com.br/home" 
+        title="whatsapp para arquitetura contemporânea residencial"><img class="icon-whatsapp" src="icon-whatsapp.png" alt="whatsapp">
+        </a>
+        <a href="https://mmmc.com.br/home" 
+        title="telegram para arquitetura contemporânea residencial"><img class="icon-telegram" src="icon-telegram.png" alt="telegram">
+        </a>
         </div>
         <div class="footer-text-table">
          <div class="footer-adress-name-text">
