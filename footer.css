@@ -1,0 +1,81 @@
+/* footer */
+
+.footer-table {
+    height: 100%;
+    background-color: rgb(210, 210, 215);
+    width: 100%;
+    margin-bottom: -15px;
+  }
+  .division {
+    color: rgb(210, 210, 215)
+  }
+  .footer-logo-and-text {
+    align-content: center;
+    object-position: 50%;
+    display: block;
+    margin-top: 55px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    object-fit: contain;
+    justify-content: center;
+    
+  }
+  .logo2 {
+    height: 23px;
+  }
+  .logo3 {
+    width: 100px;
+  }
+  .footer-column-text {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  margin-top: 80px;
+  row-gap: 20px;
+  }
+  @media (max-width: 955px) {
+    .footer-column-text {
+      grid-template-columns: 1fr;
+    }
+  }
+  .footer-phone-text,
+  .footer-adress-name-text,
+  .footer-adress-text
+   {
+    font-family: Zurich Lt BT;
+    color: rgb(98,98,98);
+    margin-left: 80px;
+    font-size: 16pt;
+    width: 380px;
+  }
+  .icon-whatsapp,
+  .icon-telegram {
+    width: 25px;
+  }
+
+  .footer-name-text {
+    text-align: center;
+    display: block;
+    font-family: Zurich Lt BT;
+    color: rgb(98,98,98);
+    font-size: 16pt;
+  }
+  .footer-direitos-text {
+    text-align: center;
+    display: block;
+    font-family: Zurich Lt BT;
+    color: rgb(98, 98, 98);
+    margin-top: 73px;
+    font-size: 11pt;
+  }
+
+  .title-high-big1 {
+    color:rgb(48,48,48);
+    font-size: 31pt;
+    font-family: Montserrat;
+    margin-top: 30px;
+    margin-bottom: 40px;
+ }
