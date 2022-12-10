@@ -179,11 +179,6 @@
   row-gap: 20px;
   }
 
-  @media (max-width: 1300px) {
-    .column-content {
-      grid-template-columns: 1fr;
-    }
-  }
   .imagem-modelo-energia {
     flex: 1;
     min-width: 200xp;
@@ -227,6 +222,17 @@
     margin-top: 21px;
     margin-bottom: 100px;
   }
+
+   /* position in relation screen */
+
+   @media screen and (max-width: 767px) {
+
+/* Hide captions class  */
+  .title-high-text {
+    top: 118px;
+  }
+
+}
     </style>
 </head>
 <body>

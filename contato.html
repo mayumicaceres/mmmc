@@ -149,11 +149,6 @@
   row-gap: 20px;
   }
 
-  @media (max-width: 1300px) {
-    .column-content {
-      grid-template-columns: 1fr;
-    }
-  }
   /* column 1 */
   .base-image-content {
     flex: 1;
@@ -211,6 +206,19 @@
   .icon-telegram {
     width: 25px;
   }
+
+  /* position in relation screen */
+
+  @media screen and (max-width: 767px) {
+
+/* Hide captions class  */
+  .title-high-text {
+    position: absolute;
+    top: 118px;
+    left: 120px;
+  }
+
+}
   
     </style>
 </head>
