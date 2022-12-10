@@ -127,12 +127,14 @@
     color:rgb(48,48,48);
     font-size: 31pt;
     font-family: Montserrat;
+    margin: 0;
   }
   .title-high-small {
     color:rgb(48,48,48);
     font-size: 22pt;
     font-family: Montserrat;
     width: 800px;
+    margin: 0;
   }
   
   /* column content */
@@ -185,10 +187,14 @@
     grid-template-columns:  1fr 1fr;
     margin: 0;
  }
-  @media (max-width: 955px) {
+  @media (max-width: 1200px) {
     .column-content {
       grid-template-columns: 1fr;
     }
+    .content-image1 {
+    margin-left: 0;
+    }
+
  }
 .content-image1 {
     position: relative;
@@ -288,7 +294,9 @@
 <!-- image high -->   
  
      <img class="image-title-high" src="painel-white.jpg">
-     <div class="title-high-text"><div class="title-high-big">Escritório de</div><div class="title-high-small">|Arquitetura Contemporânea Residencial |Arquitetura Sustentável</div>
+     <div class="title-high-text"><h2 class="title-high-big">Escritório de</h2>
+      <h1 class="title-high-small">|Arquitetura Contemporânea Residencial |Arquitetura Sustentável
+      </h1>
     </div>
 
  
@@ -299,7 +307,7 @@
   <div class="content-image1">
     <a href="https://mmmc.com.br/casariba" 
     title="Casa Riba 2022" alt="Casa Riba 2022 contemporânea São Paulo">
-    <img class="image-casas" src="casariba-camera1-640-escuro.jpg" alt="harmonia na casa">
+    <img class="image-casas" src="casariba-camera1-640-escuro.jpg" alt="harmonia na casa, arquitetura 2022">
     <div class="quad-gray"></div>
     <div class="content-text1"><h1>Casa Riba</h1><p>Casa Riba <br>2022</p></div>
     </a>
@@ -342,11 +350,11 @@
          <div class="footer-adress-text">
          Florêcio de Abreu, 36 Sala 806 CEP 01022-000 / São Paulo / SP
          </div>
-        </div>
-    </div>
-    <div class="footer-direitos-text">
-     © MMMCaceres Arquitetos 2022. Todos os direitos reservados.
-     <p>..</p>
+         </div>
+         </div>
+         <div class="footer-direitos-text">
+         © MMMCaceres Arquitetos 2022. Todos os direitos reservados.
+        <p>..</p>
     </div>
   </div>
 </body>
