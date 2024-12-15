@@ -56,15 +56,33 @@ p.text-format {
     grid-template-columns: 1fr;
   }
 }
+
+.footer-column-text-2 {
+  display: flex;
+  margin-top: 80px;
+  row-gap: 20px;
+}
+@media (max-width: 1000px) {
+  .footer-column-text-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .footer-phone-text,
 .footer-adress-name-text,
-.footer-adress-text,
-.footer-more {
+.footer-adress-text {
   font-family: Zurich Lt BT;
   color: rgb(98, 98, 98);
   margin-left: 80px;
   font-size: 16pt;
   width: 380px;
+}
+
+.footer-more {
+  font-family: Zurich Lt BT;
+  color: rgb(98, 98, 98);
+  margin-left: 80px;
+  font-size: 16pt;
 }
 
 a.link-color {
